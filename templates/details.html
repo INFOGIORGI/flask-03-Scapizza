@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block AltriLink%}
+    <a href="https://www.wikipedia.org/", target="_blank">Wikipedia</a>
+{%endblock%}
+{%block ContenutoPagina%}
+    <h1>Dettagli</h1>
+    <p>I prodotti che vendiamo sono:</p>
+    <table>
+        <tr>
+            <th>nome prodotto</th>
+            <th>scaffale</th>
+            <th>prezzo</th>
+        </tr>
+{%for p in prodotti%}
+    <tr>
+        <td><a href="">{{p[0]}}</a></td>
+        <td><a href="">{{p[1]}}</a></td>
+        <td><a href="">{{p[2]}}</a></td>
+    </tr>
+{%endfor%}
+    </table>
+{%endblock%}
