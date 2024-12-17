@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block ContenutoPagina%}
+<table>
+    <tr>
+        <th>nome prodotto</th>
+        <th>scaffale</th>
+        <th>prezzo</th>
+    </tr>
+{%for p in prodotti%}
+<tr>
+    <td>{{p[0]}}</td>
+    <td>{{p[1]}}</td>
+    <td>{{p[2]}}</td>
+</tr>
+{%endfor%}
+</table>
+{%endblock%}

@@ -13,9 +13,9 @@
         </tr>
 {%for p in prodotti%}
     <tr>
-        <td><a href="">{{p[0]}}</a></td>
-        <td><a href="">{{p[1]}}</a></td>
-        <td><a href="">{{p[2]}}</a></td>
+        <td>{{p[0]}}</td>
+        <td><a href="{{url_for('dettagliProdotto',scaffale=p[1])}}">{{p[1]}}</a></td>
+        <td>{{p[2]}}</td>
     </tr>
 {%endfor%}
     </table>
