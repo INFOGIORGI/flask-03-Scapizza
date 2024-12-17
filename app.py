@@ -15,13 +15,9 @@ def details():
 @app.route("/dettagliProdotto/<int:scaffale>")
 def dettagliProdotto(scaffale):
     p =[]
-    print("scaffa:",scaffale)
     for o in prodotti:
-        print(o[1])
         if o[1]==scaffale:
             p.append(o)
-    
-    print("lista:",p)
     
     return render_template("dettagliProdotto.html", prodotti=p)
 
